@@ -1,6 +1,7 @@
 using ExamBackend.Data.Database;
 using ExamBackend.Data.Extensions;
 using ExamBackend.Data.Filters;
+using ExamBackend.Domain.Enums;
 using ExamBackend.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -19,7 +20,7 @@ public class StaffRepository(
             .AsQueryable()
             .WhereIf(
                 q => q.Where(e => e.Position == filter!.Position), 
-                () => filter != null);
+                () => filter != null && filter.Position != Position.Unexpected);
 
     public async Task<bool> CreateStaffMember(StaffMember staffMember)
     {

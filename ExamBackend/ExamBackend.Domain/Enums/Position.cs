@@ -1,8 +1,9 @@
 namespace ExamBackend.Domain.Enums;
 
 public enum Position {
-    Analyst = 0,
-    Manager = 1,
-    Designer = 2,
-    Developer = 3,
+    Unexpected = 0,
+    Analyst = 1,
+    Manager = 2,
+    Designer = 3,
+    Developer = 4,
 }

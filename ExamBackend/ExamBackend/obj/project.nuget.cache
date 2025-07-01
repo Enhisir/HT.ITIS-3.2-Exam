@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wT2ZHPKNVi8=",
+  "dgSpecHash": "rtfRpLzKzdY=",
   "success": true,
   "projectFilePath": "/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/ExamBackend.csproj",
   "expectedPackageFiles": [
@@ -15,15 +15,15 @@
     "/home/enhisir/.nuget/packages/grpc.net.common/2.71.0/grpc.net.common.2.71.0.nupkg.sha512",
     "/home/enhisir/.nuget/packages/grpc.tools/2.71.0/grpc.tools.2.71.0.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.aspnetcore.grpc.jsontranscoding/9.0.6/microsoft.aspnetcore.grpc.jsontranscoding.9.0.6.nupkg.sha512",
+    "/home/enhisir/.nuget/packages/microsoft.aspnetcore.grpc.swagger/0.9.6/microsoft.aspnetcore.grpc.swagger.0.9.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.aspnetcore.openapi/9.0.6/microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.entityframeworkcore/9.0.6/microsoft.entityframeworkcore.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.6/microsoft.entityframeworkcore.abstractions.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.6/microsoft.entityframeworkcore.analyzers.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.6/microsoft.entityframeworkcore.inmemory.9.0.6.nupkg.sha512",
-    "/home/enhisir/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.1/microsoft.entityframeworkcore.relational.9.0.1.nupkg.sha512",
+    "/home/enhisir/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.6/microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.caching.memory/9.0.6/microsoft.extensions.caching.memory.9.0.6.nupkg.sha512",
-    "/home/enhisir/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.1/microsoft.extensions.configuration.abstractions.9.0.1.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.6/microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.6/microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.http/6.0.0/microsoft.extensions.http.6.0.0.nupkg.sha512",
@@ -32,8 +32,10 @@
     "/home/enhisir/.nuget/packages/microsoft.extensions.options/9.0.6/microsoft.extensions.options.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.extensions.primitives/9.0.6/microsoft.extensions.primitives.9.0.6.nupkg.sha512",
     "/home/enhisir/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512",
-    "/home/enhisir/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
-    "/home/enhisir/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
+    "/home/enhisir/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
+    "/home/enhisir/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
+    "/home/enhisir/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
+    "/home/enhisir/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
   ],
   "logs": []
 }

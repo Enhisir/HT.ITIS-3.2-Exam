@@ -24,17 +24,16 @@ namespace ExamBackend {
     static ModelsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3MvbW9kZWxzLnByb3RvEgVzdGFmZiKXAQoLU3RhZmZNZW1iZXIS",
-            "CgoCSWQYASABKAkSEQoJRmlyc3ROYW1lGAIgASgJEhcKCk1pZGRsZU5hbWUY",
-            "AyABKAlIAIgBARIQCghMYXN0TmFtZRgEIAEoCRIMCgRXYWdlGAUgASgFEiEK",
-            "CFBvc2l0aW9uGAYgASgOMg8uc3RhZmYuUG9zaXRpb25CDQoLX01pZGRsZU5h",
-            "bWUqQQoIUG9zaXRpb24SCwoHQW5hbHlzdBAAEgsKB01hbmFnZXIQARIMCghE",
-            "ZXNpZ25lchACEg0KCURldmVsb3BlchADQg6qAgtFeGFtQmFja2VuZGIGcHJv",
-            "dG8z"));
+            "ChNQcm90b3MvbW9kZWxzLnByb3RvEgVzdGFmZiJvCgtTdGFmZk1lbWJlchIK",
+            "CgJJZBgBIAEoCRIRCglGaXJzdE5hbWUYAiABKAkSEAoITGFzdE5hbWUYBCAB",
+            "KAkSDAoEV2FnZRgFIAEoBRIhCghQb3NpdGlvbhgGIAEoDjIPLnN0YWZmLlBv",
+            "c2l0aW9uKlEKCFBvc2l0aW9uEg4KClVuZXhwZWN0ZWQQABILCgdBbmFseXN0",
+            "EAESCwoHTWFuYWdlchACEgwKCERlc2lnbmVyEAMSDQoJRGV2ZWxvcGVyEARC",
+            "DqoCC0V4YW1CYWNrZW5kYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ExamBackend.Position), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.StaffMember), global::ExamBackend.StaffMember.Parser, new[]{ "Id", "FirstName", "MiddleName", "LastName", "Wage", "Position" }, new[]{ "MiddleName" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.StaffMember), global::ExamBackend.StaffMember.Parser, new[]{ "Id", "FirstName", "LastName", "Wage", "Position" }, null, null, null, null)
           }));
     }
     #endregion
@@ -42,10 +41,11 @@ namespace ExamBackend {
   }
   #region Enums
   public enum Position {
-    [pbr::OriginalName("Analyst")] Analyst = 0,
-    [pbr::OriginalName("Manager")] Manager = 1,
-    [pbr::OriginalName("Designer")] Designer = 2,
-    [pbr::OriginalName("Developer")] Developer = 3,
+    [pbr::OriginalName("Unexpected")] Unexpected = 0,
+    [pbr::OriginalName("Analyst")] Analyst = 1,
+    [pbr::OriginalName("Manager")] Manager = 2,
+    [pbr::OriginalName("Designer")] Designer = 3,
+    [pbr::OriginalName("Developer")] Developer = 4,
   }
 
   #endregion
@@ -88,7 +88,6 @@ namespace ExamBackend {
     public StaffMember(StaffMember other) : this() {
       id_ = other.id_;
       firstName_ = other.firstName_;
-      middleName_ = other.middleName_;
       lastName_ = other.lastName_;
       wage_ = other.wage_;
       position_ = other.position_;
@@ -125,32 +124,6 @@ namespace ExamBackend {
       }
     }
 
-    /// <summary>Field number for the "MiddleName" field.</summary>
-    public const int MiddleNameFieldNumber = 3;
-    private readonly static string MiddleNameDefaultValue = "";
-
-    private string middleName_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MiddleName {
-      get { return middleName_ ?? MiddleNameDefaultValue; }
-      set {
-        middleName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-    /// <summary>Gets whether the "MiddleName" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasMiddleName {
-      get { return middleName_ != null; }
-    }
-    /// <summary>Clears the value of the "MiddleName" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearMiddleName() {
-      middleName_ = null;
-    }
-
     /// <summary>Field number for the "LastName" field.</summary>
     public const int LastNameFieldNumber = 4;
     private string lastName_ = "";
@@ -177,7 +150,7 @@ namespace ExamBackend {
 
     /// <summary>Field number for the "Position" field.</summary>
     public const int PositionFieldNumber = 6;
-    private global::ExamBackend.Position position_ = global::ExamBackend.Position.Analyst;
+    private global::ExamBackend.Position position_ = global::ExamBackend.Position.Unexpected;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::ExamBackend.Position Position {
@@ -204,7 +177,6 @@ namespace ExamBackend {
       }
       if (Id != other.Id) return false;
       if (FirstName != other.FirstName) return false;
-      if (MiddleName != other.MiddleName) return false;
       if (LastName != other.LastName) return false;
       if (Wage != other.Wage) return false;
       if (Position != other.Position) return false;
@@ -217,10 +189,9 @@ namespace ExamBackend {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (FirstName.Length != 0) hash ^= FirstName.GetHashCode();
-      if (HasMiddleName) hash ^= MiddleName.GetHashCode();
       if (LastName.Length != 0) hash ^= LastName.GetHashCode();
       if (Wage != 0) hash ^= Wage.GetHashCode();
-      if (Position != global::ExamBackend.Position.Analyst) hash ^= Position.GetHashCode();
+      if (Position != global::ExamBackend.Position.Unexpected) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -247,10 +218,6 @@ namespace ExamBackend {
         output.WriteRawTag(18);
         output.WriteString(FirstName);
       }
-      if (HasMiddleName) {
-        output.WriteRawTag(26);
-        output.WriteString(MiddleName);
-      }
       if (LastName.Length != 0) {
         output.WriteRawTag(34);
         output.WriteString(LastName);
@@ -259,7 +226,7 @@ namespace ExamBackend {
         output.WriteRawTag(40);
         output.WriteInt32(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Position);
       }
@@ -281,10 +248,6 @@ namespace ExamBackend {
         output.WriteRawTag(18);
         output.WriteString(FirstName);
       }
-      if (HasMiddleName) {
-        output.WriteRawTag(26);
-        output.WriteString(MiddleName);
-      }
       if (LastName.Length != 0) {
         output.WriteRawTag(34);
         output.WriteString(LastName);
@@ -293,7 +256,7 @@ namespace ExamBackend {
         output.WriteRawTag(40);
         output.WriteInt32(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(48);
         output.WriteEnum((int) Position);
       }
@@ -313,16 +276,13 @@ namespace ExamBackend {
       if (FirstName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FirstName);
       }
-      if (HasMiddleName) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MiddleName);
-      }
       if (LastName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LastName);
       }
       if (Wage != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Position);
       }
       if (_unknownFields != null) {
@@ -343,16 +303,13 @@ namespace ExamBackend {
       if (other.FirstName.Length != 0) {
         FirstName = other.FirstName;
       }
-      if (other.HasMiddleName) {
-        MiddleName = other.MiddleName;
-      }
       if (other.LastName.Length != 0) {
         LastName = other.LastName;
       }
       if (other.Wage != 0) {
         Wage = other.Wage;
       }
-      if (other.Position != global::ExamBackend.Position.Analyst) {
+      if (other.Position != global::ExamBackend.Position.Unexpected) {
         Position = other.Position;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -380,10 +337,6 @@ namespace ExamBackend {
           }
           case 18: {
             FirstName = input.ReadString();
-            break;
-          }
-          case 26: {
-            MiddleName = input.ReadString();
             break;
           }
           case 34: {
@@ -423,10 +376,6 @@ namespace ExamBackend {
           }
           case 18: {
             FirstName = input.ReadString();
-            break;
-          }
-          case 26: {
-            MiddleName = input.ReadString();
             break;
           }
           case 34: {

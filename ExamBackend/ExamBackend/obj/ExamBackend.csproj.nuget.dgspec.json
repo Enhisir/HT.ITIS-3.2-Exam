@@ -55,10 +55,6 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[9.0.6, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -206,6 +202,10 @@
             "Microsoft.AspNetCore.Grpc.JsonTranscoding": {
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Microsoft.AspNetCore.Grpc.Swagger": {
+              "target": "Package",
+              "version": "[0.9.6, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",

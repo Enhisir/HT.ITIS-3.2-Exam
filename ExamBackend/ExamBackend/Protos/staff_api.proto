@@ -1,14 +1,13 @@
 syntax = "proto3";
 
 import "google/api/annotations.proto";
-import "google/protobuf/empty.proto";
 import "Protos/models.proto";
 
 option csharp_namespace = "ExamBackend";
 package staff;
 
 message GetStaffRequest {
-  optional Position PositionFilter = 1;
+    Position PositionFilter = 1;
 }
 
 message GetStaffResponse {
@@ -17,7 +16,6 @@ message GetStaffResponse {
 
 message CreateStaffRequest {
   string FirstName = 1;
-  optional string MiddleName = 2;
   string LastName = 3;
   int32 Wage = 4;
   Position Position = 5;
@@ -27,23 +25,25 @@ message DeleteStaffRequest {
   string StaffId = 1;
 }
 
+message Empty {}
+
 service StaffApi {
   rpc GetStaff (GetStaffRequest) returns (GetStaffResponse) {
     option (google.api.http) = {
       get: "/v1/staff.StaffApi/GetStaff"
     };
   };
-  rpc CreateStaffMember (CreateStaffRequest) returns (google.protobuf.Empty) {
+  rpc CreateStaffMember (CreateStaffRequest) returns (Empty) {
     option (google.api.http) = {
       post: "/v1/staff.StaffApi/CreateStaffMember"
     };
   }; 
-  rpc UpdateStaffMember (StaffMember) returns (google.protobuf.Empty) {
+  rpc UpdateStaffMember (StaffMember) returns (Empty) {
     option (google.api.http) = {
       put: "/v1/staff.StaffApi/UpdateStaffMember"
     };
   };
-  rpc DeleteStaffMember (DeleteStaffRequest) returns (google.protobuf.Empty) {
+  rpc DeleteStaffMember (DeleteStaffRequest) returns (Empty) {
     option (google.api.http) = {
       delete: "/v1/staff.StaffApi/DeleteStaffMember"
     };

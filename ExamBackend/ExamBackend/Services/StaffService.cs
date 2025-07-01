@@ -17,7 +17,6 @@ public class StaffService(
             {
                 Id = model.Id.ToString(),
                 FirstName = model.FirstName,
-                MiddleName = model.MiddleName,
                 LastName = model.LastName,
                 Wage = model.Wage,
                 Position = (Position)model.Position
@@ -33,7 +32,6 @@ public class StaffService(
         var model = new Domain.Models.StaffMember
         {
             FirstName = request.FirstName,
-            MiddleName = request.MiddleName,
             LastName = request.LastName,
             Wage = request.Wage,
             Position = (Domain.Enums.Position)request.Position
@@ -48,10 +46,14 @@ public class StaffService(
 
     public override async Task<Empty> UpdateStaffMember(StaffMember request, ServerCallContext context)
     {
+        if (!Guid.TryParse(request.Id, out var id))
+        {
+            throw new RpcException(new Status(StatusCode.InvalidArgument, "Invalid id format"));
+        }
         var model = new Domain.Models.StaffMember
         {
+            Id = id,
             FirstName = request.FirstName,
-            MiddleName = request.MiddleName,
             LastName = request.LastName,
             Wage = request.Wage,
             Position = (Domain.Enums.Position)request.Position

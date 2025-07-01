@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package staff;
+
+enum Position {
+  Unexpected = 0;
+  Analyst = 1;
+  Manager = 2;
+  Designer = 3;
+  Developer = 4;
+}
+
+message StaffMember {
+  string Id = 1;
+  string FirstName = 2;
+  string LastName = 4;
+  int32 Wage = 5; 
+  Position Position = 6;
+}

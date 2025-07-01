@@ -2,6 +2,5 @@ obj/Debug/net9.0/Protos/StaffApi.cs \
 obj/Debug/net9.0/Protos/StaffApiGrpc.cs: /home/enhisir/.nuget/packages/microsoft.aspnetcore.grpc.jsontranscoding/9.0.6/content/protos/google/api/http.proto\
  /home/enhisir/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/descriptor.proto\
  /home/enhisir/.nuget/packages/microsoft.aspnetcore.grpc.jsontranscoding/9.0.6/content/protos/google/api/annotations.proto\
- /home/enhisir/.nuget/packages/grpc.tools/2.71.0/build/native/include/google/protobuf/empty.proto\
  Protos/models.proto\
  Protos/staff_api.proto

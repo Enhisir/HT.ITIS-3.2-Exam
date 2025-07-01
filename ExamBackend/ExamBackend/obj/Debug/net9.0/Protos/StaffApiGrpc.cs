@@ -52,7 +52,7 @@ namespace ExamBackend {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ExamBackend.CreateStaffRequest> __Marshaller_staff_CreateStaffRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ExamBackend.CreateStaffRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    static readonly grpc::Marshaller<global::ExamBackend.Empty> __Marshaller_staff_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ExamBackend.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::ExamBackend.StaffMember> __Marshaller_staff_StaffMember = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::ExamBackend.StaffMember.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -67,28 +67,28 @@ namespace ExamBackend {
         __Marshaller_staff_GetStaffResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ExamBackend.CreateStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_CreateStaffMember = new grpc::Method<global::ExamBackend.CreateStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::ExamBackend.CreateStaffRequest, global::ExamBackend.Empty> __Method_CreateStaffMember = new grpc::Method<global::ExamBackend.CreateStaffRequest, global::ExamBackend.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "CreateStaffMember",
         __Marshaller_staff_CreateStaffRequest,
-        __Marshaller_google_protobuf_Empty);
+        __Marshaller_staff_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ExamBackend.StaffMember, global::Google.Protobuf.WellKnownTypes.Empty> __Method_UpdateStaffMember = new grpc::Method<global::ExamBackend.StaffMember, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::ExamBackend.StaffMember, global::ExamBackend.Empty> __Method_UpdateStaffMember = new grpc::Method<global::ExamBackend.StaffMember, global::ExamBackend.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "UpdateStaffMember",
         __Marshaller_staff_StaffMember,
-        __Marshaller_google_protobuf_Empty);
+        __Marshaller_staff_Empty);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::ExamBackend.DeleteStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty> __Method_DeleteStaffMember = new grpc::Method<global::ExamBackend.DeleteStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty>(
+    static readonly grpc::Method<global::ExamBackend.DeleteStaffRequest, global::ExamBackend.Empty> __Method_DeleteStaffMember = new grpc::Method<global::ExamBackend.DeleteStaffRequest, global::ExamBackend.Empty>(
         grpc::MethodType.Unary,
         __ServiceName,
         "DeleteStaffMember",
         __Marshaller_staff_DeleteStaffRequest,
-        __Marshaller_google_protobuf_Empty);
+        __Marshaller_staff_Empty);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -107,19 +107,19 @@ namespace ExamBackend {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> CreateStaffMember(global::ExamBackend.CreateStaffRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ExamBackend.Empty> CreateStaffMember(global::ExamBackend.CreateStaffRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> UpdateStaffMember(global::ExamBackend.StaffMember request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ExamBackend.Empty> UpdateStaffMember(global::ExamBackend.StaffMember request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::Google.Protobuf.WellKnownTypes.Empty> DeleteStaffMember(global::ExamBackend.DeleteStaffRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ExamBackend.Empty> DeleteStaffMember(global::ExamBackend.DeleteStaffRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -146,9 +146,9 @@ namespace ExamBackend {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, StaffApiBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_GetStaff, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.GetStaffRequest, global::ExamBackend.GetStaffResponse>(serviceImpl.GetStaff));
-      serviceBinder.AddMethod(__Method_CreateStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.CreateStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.CreateStaffMember));
-      serviceBinder.AddMethod(__Method_UpdateStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.StaffMember, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.UpdateStaffMember));
-      serviceBinder.AddMethod(__Method_DeleteStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.DeleteStaffRequest, global::Google.Protobuf.WellKnownTypes.Empty>(serviceImpl.DeleteStaffMember));
+      serviceBinder.AddMethod(__Method_CreateStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.CreateStaffRequest, global::ExamBackend.Empty>(serviceImpl.CreateStaffMember));
+      serviceBinder.AddMethod(__Method_UpdateStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.StaffMember, global::ExamBackend.Empty>(serviceImpl.UpdateStaffMember));
+      serviceBinder.AddMethod(__Method_DeleteStaffMember, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ExamBackend.DeleteStaffRequest, global::ExamBackend.Empty>(serviceImpl.DeleteStaffMember));
     }
 
   }

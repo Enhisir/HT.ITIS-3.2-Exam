@@ -4,16 +4,16 @@ option csharp_namespace = "ExamBackend";
 package staff;
 
 enum Position {
-  Analyst = 0;
-  Manager = 1;
-  Designer = 2;
-  Developer = 3;
+  Unexpected = 0;
+  Analyst = 1;
+  Manager = 2;
+  Designer = 3;
+  Developer = 4;
 }
 
 message StaffMember {
   string Id = 1;
   string FirstName = 2;
-  optional string MiddleName = 3;
   string LastName = 4;
   int32 Wage = 5; 
   Position Position = 6;

@@ -25,33 +25,31 @@ namespace ExamBackend {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChZQcm90b3Mvc3RhZmZfYXBpLnByb3RvEgVzdGFmZhocZ29vZ2xlL2FwaS9h",
-            "bm5vdGF0aW9ucy5wcm90bxobZ29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3Rv",
-            "GhNQcm90b3MvbW9kZWxzLnByb3RvIlIKD0dldFN0YWZmUmVxdWVzdBIsCg5Q",
-            "b3NpdGlvbkZpbHRlchgBIAEoDjIPLnN0YWZmLlBvc2l0aW9uSACIAQFCEQoP",
-            "X1Bvc2l0aW9uRmlsdGVyIjcKEEdldFN0YWZmUmVzcG9uc2USIwoHTWVtYmVy",
-            "cxgBIAMoCzISLnN0YWZmLlN0YWZmTWVtYmVyIpIBChJDcmVhdGVTdGFmZlJl",
-            "cXVlc3QSEQoJRmlyc3ROYW1lGAEgASgJEhcKCk1pZGRsZU5hbWUYAiABKAlI",
-            "AIgBARIQCghMYXN0TmFtZRgDIAEoCRIMCgRXYWdlGAQgASgFEiEKCFBvc2l0",
-            "aW9uGAUgASgOMg8uc3RhZmYuUG9zaXRpb25CDQoLX01pZGRsZU5hbWUiJQoS",
-            "RGVsZXRlU3RhZmZSZXF1ZXN0Eg8KB1N0YWZmSWQYASABKAkyxwMKCFN0YWZm",
-            "QXBpEmAKCEdldFN0YWZmEhYuc3RhZmYuR2V0U3RhZmZSZXF1ZXN0Ghcuc3Rh",
-            "ZmYuR2V0U3RhZmZSZXNwb25zZSIjgtPkkwIdEhsvdjEvc3RhZmYuU3RhZmZB",
-            "cGkvR2V0U3RhZmYSdAoRQ3JlYXRlU3RhZmZNZW1iZXISGS5zdGFmZi5DcmVh",
-            "dGVTdGFmZlJlcXVlc3QaFi5nb29nbGUucHJvdG9idWYuRW1wdHkiLILT5JMC",
-            "JiIkL3YxL3N0YWZmLlN0YWZmQXBpL0NyZWF0ZVN0YWZmTWVtYmVyEm0KEVVw",
-            "ZGF0ZVN0YWZmTWVtYmVyEhIuc3RhZmYuU3RhZmZNZW1iZXIaFi5nb29nbGUu",
-            "cHJvdG9idWYuRW1wdHkiLILT5JMCJhokL3YxL3N0YWZmLlN0YWZmQXBpL1Vw",
-            "ZGF0ZVN0YWZmTWVtYmVyEnQKEURlbGV0ZVN0YWZmTWVtYmVyEhkuc3RhZmYu",
-            "RGVsZXRlU3RhZmZSZXF1ZXN0GhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5IiyC",
-            "0+STAiYqJC92MS9zdGFmZi5TdGFmZkFwaS9EZWxldGVTdGFmZk1lbWJlckIO",
-            "qgILRXhhbUJhY2tlbmRiBnByb3RvMw=="));
+            "bm5vdGF0aW9ucy5wcm90bxoTUHJvdG9zL21vZGVscy5wcm90byI6Cg9HZXRT",
+            "dGFmZlJlcXVlc3QSJwoOUG9zaXRpb25GaWx0ZXIYASABKA4yDy5zdGFmZi5Q",
+            "b3NpdGlvbiI3ChBHZXRTdGFmZlJlc3BvbnNlEiMKB01lbWJlcnMYASADKAsy",
+            "Ei5zdGFmZi5TdGFmZk1lbWJlciJqChJDcmVhdGVTdGFmZlJlcXVlc3QSEQoJ",
+            "Rmlyc3ROYW1lGAEgASgJEhAKCExhc3ROYW1lGAMgASgJEgwKBFdhZ2UYBCAB",
+            "KAUSIQoIUG9zaXRpb24YBSABKA4yDy5zdGFmZi5Qb3NpdGlvbiIlChJEZWxl",
+            "dGVTdGFmZlJlcXVlc3QSDwoHU3RhZmZJZBgBIAEoCSIHCgVFbXB0eTKpAwoI",
+            "U3RhZmZBcGkSYAoIR2V0U3RhZmYSFi5zdGFmZi5HZXRTdGFmZlJlcXVlc3Qa",
+            "Fy5zdGFmZi5HZXRTdGFmZlJlc3BvbnNlIiOC0+STAh0SGy92MS9zdGFmZi5T",
+            "dGFmZkFwaS9HZXRTdGFmZhJqChFDcmVhdGVTdGFmZk1lbWJlchIZLnN0YWZm",
+            "LkNyZWF0ZVN0YWZmUmVxdWVzdBoMLnN0YWZmLkVtcHR5IiyC0+STAiYiJC92",
+            "MS9zdGFmZi5TdGFmZkFwaS9DcmVhdGVTdGFmZk1lbWJlchJjChFVcGRhdGVT",
+            "dGFmZk1lbWJlchISLnN0YWZmLlN0YWZmTWVtYmVyGgwuc3RhZmYuRW1wdHki",
+            "LILT5JMCJhokL3YxL3N0YWZmLlN0YWZmQXBpL1VwZGF0ZVN0YWZmTWVtYmVy",
+            "EmoKEURlbGV0ZVN0YWZmTWVtYmVyEhkuc3RhZmYuRGVsZXRlU3RhZmZSZXF1",
+            "ZXN0Ggwuc3RhZmYuRW1wdHkiLILT5JMCJiokL3YxL3N0YWZmLlN0YWZmQXBp",
+            "L0RlbGV0ZVN0YWZmTWVtYmVyQg6qAgtFeGFtQmFja2VuZGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, global::ExamBackend.ModelsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::ExamBackend.ModelsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.GetStaffRequest), global::ExamBackend.GetStaffRequest.Parser, new[]{ "PositionFilter" }, new[]{ "PositionFilter" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.GetStaffRequest), global::ExamBackend.GetStaffRequest.Parser, new[]{ "PositionFilter" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.GetStaffResponse), global::ExamBackend.GetStaffResponse.Parser, new[]{ "Members" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.CreateStaffRequest), global::ExamBackend.CreateStaffRequest.Parser, new[]{ "FirstName", "MiddleName", "LastName", "Wage", "Position" }, new[]{ "MiddleName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.DeleteStaffRequest), global::ExamBackend.DeleteStaffRequest.Parser, new[]{ "StaffId" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.CreateStaffRequest), global::ExamBackend.CreateStaffRequest.Parser, new[]{ "FirstName", "LastName", "Wage", "Position" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.DeleteStaffRequest), global::ExamBackend.DeleteStaffRequest.Parser, new[]{ "StaffId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ExamBackend.Empty), global::ExamBackend.Empty.Parser, null, null, null, null, null)
           }));
     }
     #endregion
@@ -66,7 +64,6 @@ namespace ExamBackend {
   {
     private static readonly pb::MessageParser<GetStaffRequest> _parser = new pb::MessageParser<GetStaffRequest>(() => new GetStaffRequest());
     private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<GetStaffRequest> Parser { get { return _parser; } }
@@ -94,7 +91,6 @@ namespace ExamBackend {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public GetStaffRequest(GetStaffRequest other) : this() {
-      _hasBits0 = other._hasBits0;
       positionFilter_ = other.positionFilter_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -107,29 +103,14 @@ namespace ExamBackend {
 
     /// <summary>Field number for the "PositionFilter" field.</summary>
     public const int PositionFilterFieldNumber = 1;
-    private readonly static global::ExamBackend.Position PositionFilterDefaultValue = global::ExamBackend.Position.Analyst;
-
-    private global::ExamBackend.Position positionFilter_;
+    private global::ExamBackend.Position positionFilter_ = global::ExamBackend.Position.Unexpected;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::ExamBackend.Position PositionFilter {
-      get { if ((_hasBits0 & 1) != 0) { return positionFilter_; } else { return PositionFilterDefaultValue; } }
+      get { return positionFilter_; }
       set {
-        _hasBits0 |= 1;
         positionFilter_ = value;
       }
-    }
-    /// <summary>Gets whether the "PositionFilter" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasPositionFilter {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "PositionFilter" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearPositionFilter() {
-      _hasBits0 &= ~1;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -155,7 +136,7 @@ namespace ExamBackend {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (HasPositionFilter) hash ^= PositionFilter.GetHashCode();
+      if (PositionFilter != global::ExamBackend.Position.Unexpected) hash ^= PositionFilter.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -174,7 +155,7 @@ namespace ExamBackend {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (HasPositionFilter) {
+      if (PositionFilter != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(8);
         output.WriteEnum((int) PositionFilter);
       }
@@ -188,7 +169,7 @@ namespace ExamBackend {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (HasPositionFilter) {
+      if (PositionFilter != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(8);
         output.WriteEnum((int) PositionFilter);
       }
@@ -202,7 +183,7 @@ namespace ExamBackend {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (HasPositionFilter) {
+      if (PositionFilter != global::ExamBackend.Position.Unexpected) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PositionFilter);
       }
       if (_unknownFields != null) {
@@ -217,7 +198,7 @@ namespace ExamBackend {
       if (other == null) {
         return;
       }
-      if (other.HasPositionFilter) {
+      if (other.PositionFilter != global::ExamBackend.Position.Unexpected) {
         PositionFilter = other.PositionFilter;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -496,7 +477,6 @@ namespace ExamBackend {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public CreateStaffRequest(CreateStaffRequest other) : this() {
       firstName_ = other.firstName_;
-      middleName_ = other.middleName_;
       lastName_ = other.lastName_;
       wage_ = other.wage_;
       position_ = other.position_;
@@ -519,32 +499,6 @@ namespace ExamBackend {
       set {
         firstName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
-    }
-
-    /// <summary>Field number for the "MiddleName" field.</summary>
-    public const int MiddleNameFieldNumber = 2;
-    private readonly static string MiddleNameDefaultValue = "";
-
-    private string middleName_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string MiddleName {
-      get { return middleName_ ?? MiddleNameDefaultValue; }
-      set {
-        middleName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-    /// <summary>Gets whether the "MiddleName" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasMiddleName {
-      get { return middleName_ != null; }
-    }
-    /// <summary>Clears the value of the "MiddleName" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearMiddleName() {
-      middleName_ = null;
     }
 
     /// <summary>Field number for the "LastName" field.</summary>
@@ -573,7 +527,7 @@ namespace ExamBackend {
 
     /// <summary>Field number for the "Position" field.</summary>
     public const int PositionFieldNumber = 5;
-    private global::ExamBackend.Position position_ = global::ExamBackend.Position.Analyst;
+    private global::ExamBackend.Position position_ = global::ExamBackend.Position.Unexpected;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::ExamBackend.Position Position {
@@ -599,7 +553,6 @@ namespace ExamBackend {
         return true;
       }
       if (FirstName != other.FirstName) return false;
-      if (MiddleName != other.MiddleName) return false;
       if (LastName != other.LastName) return false;
       if (Wage != other.Wage) return false;
       if (Position != other.Position) return false;
@@ -611,10 +564,9 @@ namespace ExamBackend {
     public override int GetHashCode() {
       int hash = 1;
       if (FirstName.Length != 0) hash ^= FirstName.GetHashCode();
-      if (HasMiddleName) hash ^= MiddleName.GetHashCode();
       if (LastName.Length != 0) hash ^= LastName.GetHashCode();
       if (Wage != 0) hash ^= Wage.GetHashCode();
-      if (Position != global::ExamBackend.Position.Analyst) hash ^= Position.GetHashCode();
+      if (Position != global::ExamBackend.Position.Unexpected) hash ^= Position.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -637,10 +589,6 @@ namespace ExamBackend {
         output.WriteRawTag(10);
         output.WriteString(FirstName);
       }
-      if (HasMiddleName) {
-        output.WriteRawTag(18);
-        output.WriteString(MiddleName);
-      }
       if (LastName.Length != 0) {
         output.WriteRawTag(26);
         output.WriteString(LastName);
@@ -649,7 +597,7 @@ namespace ExamBackend {
         output.WriteRawTag(32);
         output.WriteInt32(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Position);
       }
@@ -667,10 +615,6 @@ namespace ExamBackend {
         output.WriteRawTag(10);
         output.WriteString(FirstName);
       }
-      if (HasMiddleName) {
-        output.WriteRawTag(18);
-        output.WriteString(MiddleName);
-      }
       if (LastName.Length != 0) {
         output.WriteRawTag(26);
         output.WriteString(LastName);
@@ -679,7 +623,7 @@ namespace ExamBackend {
         output.WriteRawTag(32);
         output.WriteInt32(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         output.WriteRawTag(40);
         output.WriteEnum((int) Position);
       }
@@ -696,16 +640,13 @@ namespace ExamBackend {
       if (FirstName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FirstName);
       }
-      if (HasMiddleName) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(MiddleName);
-      }
       if (LastName.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(LastName);
       }
       if (Wage != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Wage);
       }
-      if (Position != global::ExamBackend.Position.Analyst) {
+      if (Position != global::ExamBackend.Position.Unexpected) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Position);
       }
       if (_unknownFields != null) {
@@ -723,16 +664,13 @@ namespace ExamBackend {
       if (other.FirstName.Length != 0) {
         FirstName = other.FirstName;
       }
-      if (other.HasMiddleName) {
-        MiddleName = other.MiddleName;
-      }
       if (other.LastName.Length != 0) {
         LastName = other.LastName;
       }
       if (other.Wage != 0) {
         Wage = other.Wage;
       }
-      if (other.Position != global::ExamBackend.Position.Analyst) {
+      if (other.Position != global::ExamBackend.Position.Unexpected) {
         Position = other.Position;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -756,10 +694,6 @@ namespace ExamBackend {
             break;
           case 10: {
             FirstName = input.ReadString();
-            break;
-          }
-          case 18: {
-            MiddleName = input.ReadString();
             break;
           }
           case 26: {
@@ -795,10 +729,6 @@ namespace ExamBackend {
             break;
           case 10: {
             FirstName = input.ReadString();
-            break;
-          }
-          case 18: {
-            MiddleName = input.ReadString();
             break;
           }
           case 26: {
@@ -1011,6 +941,167 @@ namespace ExamBackend {
             StaffId = input.ReadString();
             break;
           }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Empty : pb::IMessage<Empty>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Empty> _parser = new pb::MessageParser<Empty>(() => new Empty());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Empty> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ExamBackend.StaffApiReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Empty() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Empty(Empty other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Empty Clone() {
+      return new Empty(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Empty);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Empty other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Empty other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
         }
       }
     }

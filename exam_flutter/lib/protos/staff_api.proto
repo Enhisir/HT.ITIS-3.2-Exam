@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+import "models.proto";
+
+package staff;
+
+message GetStaffRequest {
+    Position PositionFilter = 1;
+}
+
+message GetStaffResponse {
+    repeated StaffMember Members = 1;  
+}
+
+message CreateStaffRequest {
+  string FirstName = 1;
+  string LastName = 3;
+  int32 Wage = 4;
+  Position Position = 5;
+}
+
+message DeleteStaffRequest {
+  string StaffId = 1;
+}
+
+message Empty {}
+
+service StaffApi {
+  rpc GetStaff (GetStaffRequest) returns (GetStaffResponse);
+  rpc CreateStaffMember (CreateStaffRequest) returns (Empty);
+  rpc UpdateStaffMember (StaffMember) returns (Empty);
+  rpc DeleteStaffMember (DeleteStaffRequest) returns (Empty);
+}

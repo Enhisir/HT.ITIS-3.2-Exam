@@ -19,10 +19,8 @@
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.InMemory.dll
-/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
-/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
@@ -30,8 +28,6 @@
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.OpenApi.dll
-/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Npgsql.dll
-/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/ExamBackend.Data.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/ExamBackend.Domain.dll
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/ExamBackend.Data.pdb
@@ -59,3 +55,9 @@
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/obj/Debug/net9.0/ExamBackend.pdb
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/obj/Debug/net9.0/ExamBackend.genruntimeconfig.cache
 /mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/obj/Debug/net9.0/ref/ExamBackend.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Microsoft.AspNetCore.Grpc.Swagger.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/bin/Debug/net9.0/ExamBackend.xml
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend/obj/Debug/net9.0/ExamBackend.xml
