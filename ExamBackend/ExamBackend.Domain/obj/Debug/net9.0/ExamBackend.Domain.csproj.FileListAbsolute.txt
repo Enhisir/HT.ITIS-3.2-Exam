@@ -1,0 +1,15 @@
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/bin/Debug/net9.0/ExamBackend.Domain.deps.json
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/bin/Debug/net9.0/ExamBackend.Domain.runtimeconfig.json
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/bin/Debug/net9.0/ExamBackend.Domain.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/bin/Debug/net9.0/ExamBackend.Domain.pdb
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.csproj.AssemblyReference.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.AssemblyInfoInputs.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.AssemblyInfo.cs
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.csproj.CoreCompileInputs.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.sourcelink.json
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/refint/ExamBackend.Domain.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.pdb
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ExamBackend.Domain.genruntimeconfig.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Domain/obj/Debug/net9.0/ref/ExamBackend.Domain.dll

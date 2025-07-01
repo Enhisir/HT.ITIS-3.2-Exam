@@ -1,0 +1,16 @@
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/bin/Debug/net9.0/ExamBackend.Data.deps.json
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/bin/Debug/net9.0/ExamBackend.Data.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/bin/Debug/net9.0/ExamBackend.Data.pdb
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/bin/Debug/net9.0/ExamBackend.Domain.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/bin/Debug/net9.0/ExamBackend.Domain.pdb
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.csproj.AssemblyReference.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.AssemblyInfoInputs.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.AssemblyInfo.cs
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.csproj.CoreCompileInputs.cache
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.sourcelink.json
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBack.8A861D29.Up2Date
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/refint/ExamBackend.Data.dll
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ExamBackend.Data.pdb
+/mnt/data/projects/HT.ITIS-3.2-Exam/ExamBackend/ExamBackend.Data/obj/Debug/net9.0/ref/ExamBackend.Data.dll
