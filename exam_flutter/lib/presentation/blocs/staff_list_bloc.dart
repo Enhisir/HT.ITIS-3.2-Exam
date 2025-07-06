@@ -14,6 +14,16 @@ class DeleteStaff extends StaffListEvent {
   DeleteStaff(this.id);
 }
 
+class UpdateStaffMember extends StaffListEvent {
+  final StaffMember updatedMember;
+  UpdateStaffMember(this.updatedMember);
+}
+
+class DeleteStaffMember extends StaffListEvent {
+  final String id;
+  DeleteStaffMember(this.id);
+}
+
 abstract class StaffListState {}
 
 class StaffListInitial extends StaffListState {}
@@ -53,5 +63,26 @@ class StaffListBloc extends Bloc<StaffListEvent, StaffListState> {
         emit(StaffListError(e.toString()));
       }
     });
+
+    on<UpdateStaffMember>((event, emit) async {
+      try {
+        await repository.updateStaffMember(event.updatedMember);
+        final staff = await repository.getStaff();
+        emit(StaffListLoaded(staff));
+      } catch (e) {
+        emit(StaffListError(e.toString()));
+      }
+    });
+
+    on<DeleteStaffMember>((event, emit) async {
+      try {
+        await repository.deleteStaffMember(event.id);
+        final staff = await repository.getStaff();
+        emit(StaffListLoaded(staff));
+      } catch (e) {
+        emit(StaffListError(e.toString()));
+      }
+    });
   }
 }
+

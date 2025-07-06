@@ -4,6 +4,8 @@ import 'package:exam_flutter/presentation/blocs/staff_list_bloc.dart';
 import 'package:exam_flutter/domain/models/staff_member.dart';
 
 class StaffEditScreen extends StatefulWidget {
+  static const routeName = '/staff_edit';
+
   final StaffMember staffMember;
 
   const StaffEditScreen({required this.staffMember, Key? key}) : super(key: key);
@@ -43,17 +45,14 @@ class _StaffEditScreenState extends State<StaffEditScreen> {
       position: position,
     );
 
-    context.read<StaffListBloc>().repository.updateStaffMember(updated).then((_) {
-      context.read<StaffListBloc>().add(LoadStaff());
-      Navigator.of(context).pop();
-    });
+    // Обновляем через bloc (через событие)
+    context.read<StaffListBloc>().add(UpdateStaffMember(updated));
+    Navigator.of(context).pop();
   }
 
   void delete() {
-    context.read<StaffListBloc>().repository.deleteStaffMember(widget.staffMember.id).then((_) {
-      context.read<StaffListBloc>().add(LoadStaff());
-      Navigator.of(context).pop();
-    });
+    context.read<StaffListBloc>().add(DeleteStaffMember(widget.staffMember.id));
+    Navigator.of(context).pop();
   }
 
   @override
@@ -64,9 +63,7 @@ class _StaffEditScreenState extends State<StaffEditScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.delete),
-            onPressed: () {
-              delete();
-            },
+            onPressed: delete,
           )
         ],
       ),

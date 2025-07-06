@@ -4,9 +4,11 @@ import 'package:exam_flutter/protos/models.pb.dart' as grpc_models;
 import 'package:exam_flutter/protos/staff_api.pbgrpc.dart' as grpc_api;
 
 class StaffRepositoryImpl implements StaffRepository {
-  final grpc_api.StaffApiClient client;
+  // Убираем gRPC клиента, он не нужен в моковой версии
+  // final grpc_api.StaffApiClient client;
 
-  StaffRepositoryImpl(this.client);
+  // Конструктор без параметров
+  StaffRepositoryImpl();
 
   Position _mapPosition(grpc_models.Position p) {
     switch (p) {
@@ -54,35 +56,43 @@ class StaffRepositoryImpl implements StaffRepository {
     position: _mapGrpcPosition(m.position),
   );
 
+  // --- Вот мок-данные ---
+  final List<StaffMember> _mockStaff = [
+    StaffMember(id: '1', firstName: 'Алексей', lastName: 'Петров', wage: 80000, position: Position.developer),
+    StaffMember(id: '2', firstName: 'Мария', lastName: 'Смирнова', wage: 90000, position: Position.manager),
+    StaffMember(id: '3', firstName: 'Игорь', lastName: 'Кузнецов', wage: 70000, position: Position.analyst),
+    StaffMember(id: '4', firstName: 'Елена', lastName: 'Новикова', wage: 75000, position: Position.designer),
+    StaffMember(id: '5', firstName: 'Дмитрий', lastName: 'Васильев', wage: 85000, position: Position.developer),
+    StaffMember(id: '6', firstName: 'Ольга', lastName: 'Соколова', wage: 72000, position: Position.analyst),
+  ];
+
   @override
   Future<List<StaffMember>> getStaff({Position? filter}) async {
-    final request = grpc_api.GetStaffRequest();
-    if (filter != null) {
-      request.positionFilter = _mapGrpcPosition(filter);
+    await Future.delayed(const Duration(milliseconds: 200)); // имитация задержки
+    if (filter == null || filter == Position.unexpected) {
+      return List.from(_mockStaff);
     }
-    final response = await client.getStaff(request);
-    return response.members.map(_fromGrpc).toList();
+    return _mockStaff.where((e) => e.position == filter).toList();
   }
 
   @override
   Future<void> createStaffMember(StaffMember member) async {
-    final request = grpc_api.CreateStaffRequest(
-      firstName: member.firstName,
-      lastName: member.lastName,
-      wage: member.wage,
-      position: _mapGrpcPosition(member.position),
-    );
-    await client.createStaffMember(request);
+    await Future.delayed(const Duration(milliseconds: 200));
+    _mockStaff.add(member);
   }
 
   @override
   Future<void> updateStaffMember(StaffMember member) async {
-    await client.updateStaffMember(_toGrpc(member));
+    await Future.delayed(const Duration(milliseconds: 200));
+    final index = _mockStaff.indexWhere((e) => e.id == member.id);
+    if (index != -1) {
+      _mockStaff[index] = member;
+    }
   }
 
   @override
   Future<void> deleteStaffMember(String id) async {
-    final request = grpc_api.DeleteStaffRequest(staffId: id);
-    await client.deleteStaffMember(request);
+    await Future.delayed(const Duration(milliseconds: 200));
+    _mockStaff.removeWhere((e) => e.id == id);
   }
 }
